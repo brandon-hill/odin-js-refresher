@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS refresher</title>
+</head>
+<body>
+<script>
+  // Add 7 to an input
+  function add7(a) {
+    return (a + 7)
+  };
+
+  // Return the product of two inputs
+  function multiply(a, b) {
+    return (a * b)
+  };
+
+  // Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+  function capitalize(string) {
+    const lowerCase = string.toLowerCase();
+
+    const capitalized = lowerCase.charAt(0).toUpperCase() + lowerCase.slice(1);
+    
+    return capitalized;
+  }
+
+  // Write a function called lastLetter that takes a string and returns the very last letter of that string:
+  function lastLetter(string) {
+    return string.charAt(string.length - 1);
+  };
+
+</script>
+</body>
+</html>
